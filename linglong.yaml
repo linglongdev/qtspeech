@@ -1,0 +1,26 @@
+package:
+  id: qtspeech
+  name: qtspeech
+  kind: lib
+  version: 5.11.3
+  description: |
+    qtspeech
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+- id: qtmultimedia
+  version: 5.11.3
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/qtspeech-opensource-src.git
+  version: uos/5.11.3
+  commit: 6c05db94ae208e86db53773701d39d4139b7a2a6
+  patch: []
+build:
+  kind: qmake
